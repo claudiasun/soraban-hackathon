@@ -10,8 +10,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Initialize Perplexity client
+if (!process.env.PERPLEXITY_API_KEY) {
+  console.error('❌ PERPLEXITY_API_KEY environment variable is required');
+  process.exit(1);
+}
+
 const client = new Perplexity({
-  apiKey: process.env.PERPLEXITY_API_KEY || 'your-api-key-here'
+  apiKey: process.env.PERPLEXITY_API_KEY
 });
 
 // Middleware
