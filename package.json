@@ -1,0 +1,43 @@
+{
+  "name": "soraban-hackathon",
+  "version": "1.0.0",
+  "description": "Soraban questionnaire template builder",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node server.ts",
+    "install-deps": "npm install",
+    "build-ui": "webpack --mode production",
+    "dev-ui": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "@perplexity-ai/perplexity_ai": "^0.8.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "html-webpack-plugin": "^5.5.0",
+    "css-loader": "^6.8.0",
+    "style-loader": "^3.3.0",
+    "ts-loader": "^9.4.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "postcss-loader": "^7.3.0"
+  }
+}
